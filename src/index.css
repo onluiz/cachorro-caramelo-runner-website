@@ -584,8 +584,11 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   box-shadow: var(--pixel-shadow);
   padding: 2.25rem 1.5rem 2rem;
   position: relative;
+  z-index: 1;
 }
 .step + .step { margin-left: -3px; }
+.step:nth-child(1) { z-index: 3; }
+.step:nth-child(2) { z-index: 2; }
 
 .step__num {
   font-family: var(--font-pixel);
