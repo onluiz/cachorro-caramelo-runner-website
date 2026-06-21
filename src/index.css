@@ -429,6 +429,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   z-index: 1;
   filter: drop-shadow(0 8px 40px rgba(245,197,24,.3));
   image-rendering: auto;
+  border-radius: 16px;
 }
 
 .hero__grass {
@@ -511,6 +512,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   border: var(--pixel-border);
   box-shadow: var(--pixel-shadow);
   image-rendering: auto;
+  border-radius: 16px;
 }
 
 .characters__badge {
