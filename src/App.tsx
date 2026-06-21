@@ -109,11 +109,11 @@ function Hero() {
         <div className="hero__img-wrap">
           <div className="hero__glow" aria-hidden="true" />
           <img
-            src="/images/dog-running.jpeg"
-            alt="Cachorro Caramelo correndo no jogo pixel art"
+            src="/images/banner.png"
+            alt="Cachorro Caramelo Runner — banner oficial do jogo pixel art para Android"
             className="hero__dog animate-float"
-            width="380"
-            height="380"
+            width="460"
+            height="300"
             loading="eager"
             fetchPriority="high"
           />
@@ -200,7 +200,7 @@ function Characters() {
         <div className="characters__inner">
           <div className="characters__img-wrap reveal">
             <img
-              src="/images/dog-hero.jpeg"
+              src="/images/dog-brasil.png"
               alt="Cachorro Caramelo vestindo a camisa do Brasil número 10 — fantasia desbloqueável no jogo"
               className="characters__img"
               width="300"
