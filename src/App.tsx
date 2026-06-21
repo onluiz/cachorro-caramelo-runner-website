@@ -191,6 +191,12 @@ const CHARACTERS = [
     label: 'Casual Style',
     desc: 'Com um look casual e muito estilo. O Caramelo na moda para qualquer aventura.',
   },
+  {
+    emoji: '✨',
+    name: 'E muito mais!',
+    label: 'Surpresas te esperam',
+    desc: 'Tem várias outras fantasias esperando por você dentro do jogo. Baixe e descubra todas!',
+  },
 ]
 
 function Characters() {
@@ -221,7 +227,11 @@ function Characters() {
 
             <div className="characters__list">
               {CHARACTERS.map((c, i) => (
-                <div key={c.name} className="char-item reveal" style={{ transitionDelay: `${i * 0.12}s` }}>
+                <div
+                  key={c.name}
+                  className={`char-item reveal${i === CHARACTERS.length - 1 ? ' char-item--more' : ''}`}
+                  style={{ transitionDelay: `${i * 0.12}s` }}
+                >
                   <span className="char-item__emoji">{c.emoji}</span>
                   <div>
                     <p>
